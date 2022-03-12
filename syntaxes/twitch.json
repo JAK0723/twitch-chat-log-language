@@ -1,0 +1,33 @@
+ {
+  "scopeName": "source.twitch",
+  "name": "Twitch Chat Log",
+  "patterns": [
+    {
+      "match": "^\\[\\d+:\\d{2}:\\d{2}\\]",
+      "name": "comment.line.time.twitch"
+    },
+    {
+      "match": "<([-!$%^&*()_+|~=`{}\\[\\]:\";'<>?,./@#]?)(\\S+)\\s?> (.*)",
+      "captures": {
+        "1": {
+          "name": "invalid.illegal.badge.twitch"
+        },
+        "2": {
+          "name": "string.quoted.user.twitch"
+        },
+        "3": {
+          "patterns": [
+            {
+              "match": "@\\S+",
+              "name": "support.function.mention.twitch"
+            },
+            {
+              "match": "(https?:\\/\\/)?(www\\.)?[-a-zA-Z0-9@:%_\\+~#=]+\\.[a-z]+\\b([-a-zA-Z0-9@:%_\\+.~#()?&//=]*)",
+              "name": "keyword.control.url.twitch"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
