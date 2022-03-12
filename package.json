@@ -2,24 +2,44 @@
     "name": "twitch-chat-log-language",
     "displayName": "Twitch Chat Log Language",
     "description": "Syntax highlighting for Twitch Chat Downloader logs in IRC format",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "publisher": "JAK0723",
     "engines": {
         "vscode": "^1.65.0"
     },
+    "license": "MIT",
     "categories": [
-        "Programming Languages"
+        "Other"
+    ],
+    "keywords": [
+        "Twitch",
+        "Chat",
+        "Logging"
     ],
     "contributes": {
-        "languages": [{
-            "id": "twitch",
-            "aliases": ["Twitch Chat Log", "twitch"],
-            "extensions": [".tcd"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "twitch",
-            "scopeName": "source.twitch",
-            "path": "./syntaxes/twitch.json"
-        }]
+        "languages": [
+            {
+                "id": "twitch",
+                "aliases": [
+                    "Twitch Chat Log",
+                    "twitch"
+                ],
+                "extensions": [
+                    ".tcd"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "twitch",
+                "scopeName": "source.twitch",
+                "path": "./syntaxes/twitch.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JAK0723/twitch-chat-log-language.git"
     }
 }
