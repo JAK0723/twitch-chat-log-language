@@ -3,7 +3,7 @@
   "name": "Twitch Chat Log",
   "patterns": [
     {
-      "match": "^\\[\\d+:\\d{2}:\\d{2}\\]",
+      "match": "^\\[\\d+:\\d{2}:\\d{2}(.\\d{3})?\\]",
       "name": "comment.line.time.twitch"
     },
     {
