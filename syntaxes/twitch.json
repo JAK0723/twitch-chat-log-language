@@ -7,7 +7,7 @@
       "name": "comment.line.time.twitch"
     },
     {
-      "match": "<?([-!$%^&*()_+|~=`{}\\[\\]:\";'<>?,./@#]?)(\\S+)\\s?[>:] (.*)",
+      "match": "<?([-!$%^&*()_+|~=`{}\\[\\]:\";'<>?,./@#]?)([a-zA-Z0-9][a-zA-Z0-9_]+)\\s?[>:] (.*)",
       "captures": {
         "1": {
           "name": "invalid.illegal.badge.twitch"
