@@ -2,7 +2,7 @@
     "name": "twitch-chat-log-language",
     "displayName": "Twitch Chat Log Language",
     "description": "Syntax highlighting for Twitch Chat Downloader and Twitch Downloader plain text logs",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "JAK0723",
     "icon": "images/logo.png",
     "engines": {
