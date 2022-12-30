@@ -2,6 +2,10 @@
 
 All notable changes to the "twitch-chat-log-language" extension will be documented in this file.
 
+## [1.0.4] - 2022-12-31
+- Tightened username regex to mirror Twitch's username restrictions
+- Loosened badge regex to allow matching multiple badge symbols, badges are now considered any non alphanumeric character that isn't "<"
+
 ## [1.0.3] - 2022-12-30
 - Added support for milliseconds in timestamps, which are present in [TheDrHax's fork of Twitch Chat Downloader](https://github.com/TheDrHax/Twitch-Chat-Downloader)
 
